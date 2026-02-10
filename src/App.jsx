@@ -1,5 +1,8 @@
-import { use, useState } from "react";
+import { useState } from "react";
 import { UserCard } from "./components/UserCard";
+import LearnUseReducer from "./LearnUseReducer";
+import { MyComponents } from "./components/MyComponents";
+import TaskApp from "./components/TaskApp";
 
 export default function App() {
 
@@ -82,6 +85,29 @@ export default function App() {
   return (
 
     <div style={pageStyle}>
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <TaskApp />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <MyComponents />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <hr />
+      <h1>Learning Use Reducer</h1>
+      <LearnUseReducer />
+      <hr />
       <h1 style={{textAlign: 'center', paddingTop:'20px', color: "#000"}}>Team Directory</h1>
 
 
