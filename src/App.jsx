@@ -3,6 +3,7 @@ import { UserCard } from "./components/UserCard";
 import LearnUseReducer from "./LearnUseReducer";
 import { MyComponents } from "./components/MyComponents";
 import TaskApp from "./components/TaskApp";
+import ThemeCard from "./ThemeCard";
 
 export default function App() {
 
@@ -92,6 +93,8 @@ export default function App() {
       <TaskApp />
       <hr />
       <hr />
+      <hr />
+      <ThemeCard />
       <hr />
       <hr />
       <hr />
