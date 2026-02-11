@@ -24,6 +24,7 @@ const LearnUseReducer = () => {
     <div>
       <h1>Count: {state.count}</h1>
       {/* 4. Trigger the change using dispatch */}
+      
       <button onClick={() => dispatch({ type: "INCREMENT" })}>+++++</button>
       <button onClick={() => dispatch({ type: "DECREMENT" })}>-----</button>
     </div>

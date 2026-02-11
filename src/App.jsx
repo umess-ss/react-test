@@ -4,6 +4,8 @@ import LearnUseReducer from "./LearnUseReducer";
 import { MyComponents } from "./components/MyComponents";
 import TaskApp from "./components/TaskApp";
 import ThemeCard from "./ThemeCard";
+import LearnUseState from "./components/LearnUseState";
+
 
 export default function App() {
 
@@ -86,6 +88,7 @@ export default function App() {
   return (
 
     <div style={pageStyle}>
+      <LearnUseState />
       <hr />
       <hr />
       <hr />

@@ -1,8 +1,7 @@
-import { useState, useReducer } from "react";
-
 
 export const initialState = [
-    {id:1, text: 'Learn React Hooks', completed: false}
+    {id:1, text: 'Learn React Hooks', completed: false},
+    {id:2, text: 'Learn React Hooks', completed: false},
 ]
 
 export function taskReducer(state, action){
