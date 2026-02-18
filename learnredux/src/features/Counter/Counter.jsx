@@ -3,7 +3,8 @@ import {
     increment,
     decrement,
     reset,
-    incrementByAmount
+    incrementByAmount,
+    decrementByAmount
 } from './counterSlice';
 import { useState } from "react";
 
@@ -12,12 +13,13 @@ const Counter = () => {
 
     const dispatch = useDispatch();
 
-    const [incrementAmount, setIncrementAmount] = useState(0);
+    const [incrementDecAmount, setIncrementDecAmount] = useState(0);
 
-    const addValue = Number(incrementAmount) || 0;
+
+    const addValue = Number(incrementDecAmount) || 0;
 
     const resetAll = () => {
-        setIncrementAmount(0);
+        setIncrementDecAmount(0);
         dispatch(reset());
     }
 
@@ -31,12 +33,16 @@ const Counter = () => {
 
             <input
                 type="text"
-                value={incrementAmount}
-                onChange={(e) => setIncrementAmount(e.target.value)}
+                value={incrementDecAmount}
+                onChange={(e) => setIncrementDecAmount(e.target.value)}
+                placeholder="Enter By Amount"
             />
+
+    
 
             <div>
                 <button onClick={() => dispatch(incrementByAmount(addValue))}>Add Amount</button>
+                <button onClick={() => dispatch(decrementByAmount(addValue))}>Subtract Amount</button>
                 <button onClick={resetAll}>Reset</button>
             </div>
         </section>
